@@ -1,0 +1,10 @@
+# Ignore VS Code settings
+.vscode/
+
+# Ignore CSV & JSON files
+*.xlsx
+*Trial Samples
+
+# Ignore Python cache
+__pycache__/
+*.pyc
