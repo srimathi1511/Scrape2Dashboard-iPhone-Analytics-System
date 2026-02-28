@@ -1,11 +1,8 @@
 # Scrape2Dashboard-iPhone-Analytics-System
-
 End-to-end data engineering and analytics project that scrapes iPhone listings, transforms and standardizes the data, stores it in ClickHouse, and delivers pricing and demand insights using Apache Superset dashboards.
-
 ---
 
 # 📌 Project Overview
-
 This repository contains:
 
 - Scrapy spider for web scraping
@@ -14,7 +11,6 @@ This repository contains:
 - ClickHouse table schema
 - Dockerized Superset setup
 - Dashboard creation workflow
-
 Everything runs from this single project repository.
 
 ---
@@ -32,7 +28,6 @@ ClickHouse
 Apache Superset  
 ↓  
 Dashboard
-
 ---
 
 # 🛠️ Tech Stack
@@ -44,7 +39,6 @@ Dashboard
 - ClickHouse
 - Apache Superset
 - Docker
-
 ---
 
 # 📂 Project Structure
@@ -72,7 +66,6 @@ iPhone-Pricing-Demand-Analysis/
 ```
 
 ---
-
 # 🚀 Complete Execution Steps
 
 # 1️⃣ Install Python Dependencies
@@ -126,12 +119,11 @@ Iphones_Data_transformed.csv
 
 This script:
 - Extracts RAM and ROM
+- Expandable or Not
 - Detects expandable storage
 - Aggregates colours
 - Cleans price columns
 - Standardizes fields
-
-
 ---
 
 # 4️⃣ Install Docker
@@ -222,48 +214,7 @@ Enter container:
 docker exec -it clickhouse-server clickhouse-client
 ```
 
-Create database:
-
-```sql
-CREATE DATABASE analytics;
-```
-
-Create table:
-
-```sql
-CREATE TABLE analytics.Iphones
-(
-S_No UInt32,
-Product_name String,
-RAM String,
-ROM String,
-Is_Expandable String,
-Expandable_Upto String,
-Display String,
-Camera String,
-Processor String,
-Battery String,
-Colours String,
-Selling_price Float64,
-Original_price Float64,
-Discount Float64,
-Warranty_Status String,
-Warranty String,
-Ratings_count UInt32,
-Review_count UInt32,
-Info String
-)
-ENGINE = MergeTree
-ORDER BY S_No;
-```
-
-Exit client:
-
-```sql
-exit
-```
-
----
+Create database with SQL commands and exit
 
 # 7️⃣ Insert Data into ClickHouse
 
@@ -298,7 +249,7 @@ Test and save.
 Created dataset from:
 
 ```
-analytics.Iphones
+<Database_name>.<Table_name>
 ```
 
 Create:
