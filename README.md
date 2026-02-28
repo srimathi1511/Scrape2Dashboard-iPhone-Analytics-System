@@ -270,6 +270,7 @@ Create:
 Combine into dashboard:
 
 **iPhone Analytics System Dashboard**
+<img width="2001" height="1820" alt="image" src="https://github.com/user-attachments/assets/36684551-cedd-40ef-8e00-ddc7547b85c1" />
 
 ---
 
