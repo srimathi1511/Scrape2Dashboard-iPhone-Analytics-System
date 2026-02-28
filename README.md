@@ -1,5 +1,7 @@
 # Scrape2Dashboard-iPhone-Analytics-System
+---
 End-to-end data engineering and analytics project that scrapes iPhone listings, transforms and standardizes the data, stores it in ClickHouse, and delivers pricing and demand insights using Apache Superset dashboards.
+
 ---
 
 # 📌 Project Overview
